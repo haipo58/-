@@ -1,0 +1,14 @@
+C:\Users\haipo\source\repos\司控台通信\司控台通信\bin\Debug\司控台通信.exe.config
+C:\Users\haipo\source\repos\司控台通信\司控台通信\bin\Debug\司控台通信.exe
+C:\Users\haipo\source\repos\司控台通信\司控台通信\bin\Debug\司控台通信.pdb
+C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\MainWindow.g.cs
+C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\App.g.cs
+C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\司控台通信_MarkupCompile.cache
+C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\司控台通信_MarkupCompile.lref
+C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\MainWindow.baml
+C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\司控台通信.g.resources
+C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\司控台通信.Properties.Resources.resources
+C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\司控台通信.csproj.GenerateResource.cache
+C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\司控台通信.csproj.CoreCompileInputs.cache
+C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\司控台通信.exe
+C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\司控台通信.pdb
