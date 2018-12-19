@@ -5,9 +5,11 @@ namespace 司控台通信
 {
     public class Controler2D3
     {
+        // 包类型
         public enum PackageType
         {
-            None, Message
+            None,
+            Message // 数据包
         }
 
         public enum HandlePosition
@@ -39,7 +41,11 @@ namespace 司控台通信
             Down = 0x55, Up = 0xAA
         }
 
-        internal void Unpack(byte[] buf)
+        /// <summary>
+        /// 解包
+        /// </summary>
+        /// <param name="buf">数据</param>
+        public void Unpack(byte[] buf)
         {
             using (var stream = new MemoryStream(buf))
             using (var reader = new BinaryReader(stream))

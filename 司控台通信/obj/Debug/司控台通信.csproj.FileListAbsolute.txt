@@ -12,3 +12,4 @@ C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\司控台�
 C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\司控台通信.csproj.CoreCompileInputs.cache
 C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\司控台通信.exe
 C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\司控台通信.pdb
+C:\Users\haipo\source\repos\司控台通信\司控台通信\obj\Debug\司控台通信.csprojAssemblyReference.cache
