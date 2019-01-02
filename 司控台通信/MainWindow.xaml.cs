@@ -17,6 +17,8 @@ namespace 司控台通信
         // 司控台 -> 3D 的数据包
         private Controler2D3 controlerPack = new Controler2D3();
 
+        private D3ToControler d3Pack = new D3ToControler();
+
         // 串口
         private SerialPort serial = new SerialPort("COM3", 9600, Parity.None, 8, StopBits.One);
 
@@ -27,6 +29,7 @@ namespace 司控台通信
         {
             InitializeComponent();
             ControllerPanel.DataContext = controlerPack;
+            D3Panel.DataContext = d3Pack;
 
             try
             {
@@ -127,6 +130,19 @@ namespace 司控台通信
             ListBoxItem item = new ListBoxItem() { Content = message, Foreground = foreground };
             LogListBox.Items.Add(item);
             LogListBox.ScrollIntoView(item);
+        }
+
+        private void SendButton_Click(object sender, RoutedEventArgs e)
+        {
+            byte[] buf = d3Pack.Pack();
+            try
+            {
+                serial.Write(buf, 0, d3Pack.PackLen);
+            }
+            catch (Exception ex)
+            {
+                Log(ex.ToString(), Brushes.Red);
+            }
         }
     }
 }

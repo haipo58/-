@@ -17,6 +17,14 @@
             <Setter Property="Margin" Value="3"/>
             <Setter Property="Width" Value="60"/>
         </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Margin" Value="3"/>
+            <Setter Property="Width" Value="50"/>
+            <Setter Property="SelectedIndex" Value="0"/>
+        </Style>
+        <Style TargetType="CheckBox">
+            <Setter Property="Margin" Value="3 3 8 3"/>
+        </Style>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -99,6 +107,39 @@
             <GroupBox.Header>
                 <TextBlock Text="D3->司控台" FontWeight="Bold"/>
             </GroupBox.Header>
+            <StackPanel Name="D3Panel">
+                <WrapPanel Margin="3">
+                    <TextBlock Text="门选开关"/>
+                    <ComboBox SelectedIndex="{Binding Path=DoorKnob}">
+                        <ComboBoxItem Content="0"/>
+                        <ComboBoxItem Content="1"/>
+                        <ComboBoxItem Content="2"/>
+                    </ComboBox>
+                    <TextBlock Text="反向器"/>
+                    <ComboBox SelectedIndex="{Binding Path=ReversKnob}">
+                        <ComboBoxItem Content="0"/>
+                        <ComboBoxItem Content="1"/>
+                        <ComboBoxItem Content="2"/>
+                    </ComboBox>
+                </WrapPanel>
+                <WrapPanel Margin="3">
+                    <TextBlock Text="紧急制动按钮"/>
+                    <CheckBox IsChecked="{Binding Path=IsEb}"/>
+                    <TextBlock Text="门模式"/>
+                    <CheckBox IsChecked="{Binding Path=IsDoorMode}"/>
+                    <TextBlock Text="门允许按钮"/>
+                    <CheckBox IsChecked="{Binding Path=IsDoorAllowButton}"/>
+                    <TextBlock Text="缓解灯不亮"/>
+                    <CheckBox IsChecked="{Binding Path=IsReleaseLightFail}"/>
+                    <TextBlock Text="关门灯"/>
+                    <CheckBox IsChecked="{Binding Path=IsDoorCloseLight}"/>
+                    <TextBlock Text="开门灯"/>
+                    <CheckBox IsChecked="{Binding Path=IsDoorOpenLight}"/>
+                    <TextBlock Text="门允许灯"/>
+                    <CheckBox IsChecked="{Binding Path=IsDoorAllow}"/>
+                </WrapPanel>
+                <Button Content="发送" Name="SendButton" Click="SendButton_Click" Width="100" Margin="3"/>
+            </StackPanel>
         </GroupBox>
         <GroupBox Grid.Row="2">
             <GroupBox.Header>
